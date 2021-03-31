@@ -9,10 +9,8 @@
 import UIKit
 
 class categoryElementsCell: UITableViewCell {
-    @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var nativeName: UILabel!
+    //@IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var englishName: UILabel!
-    @IBOutlet weak var playButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,8 +21,6 @@ class categoryElementsCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    @IBAction func playSound(_ sender: Any) {
     }
     
 }
