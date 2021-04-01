@@ -11,6 +11,8 @@ import UIKit
 class MainViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var allCategoriesCollectionView: UICollectionView!
+    @IBOutlet weak var profileContact: UIImageView!
+    
     private let categories = ["Vegetables","Relations","Numbers","Fruits","Colors","Animals"]
     private let dataModels = [vegetableData , relationsData , numbersData , fruitsData , colorsData , animalsData]
     private let itemsPerRow: CGFloat = 2
@@ -21,11 +23,22 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
     
     override func viewDidLoad() {
          super.viewDidLoad()
-         // Do any additional setup after loading the view.
+        let profileGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(profileClicked))
+        profileContact.isUserInteractionEnabled = true
+        profileContact.addGestureRecognizer(profileGestureRecognizer)
         allCategoriesCollectionView.delegate = self
         allCategoriesCollectionView.dataSource = self
         self.allCategoriesCollectionView.register(UINib(nibName: "categoryItemCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categoryCell")
      }
+    
+    
+    @objc func profileClicked() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "categoryList") as! CategoryListItem
+        nextViewController.showContactScreen = true
+        nextViewController.headerImageToSet = #imageLiteral(resourceName: "header-contact")
+        self.present(nextViewController, animated: true, completion: nil)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categories.count
@@ -36,19 +49,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         print(categories[indexPath.row])
         cell.categoryItemLabel.text = categories[indexPath.row]
         cell.categoryItemImgView.image = UIImage(named: categories[indexPath.row])
-        //cell.contentView.layer.cornerRadius = 20
-        //cell.contentView.layer.borderWidth = 1.0
-
-        //cell.contentView.layer.borderColor = UIColor.clear.cgColor
-        //cell.contentView.layer.masksToBounds = true
-
-        //cell.layer.shadowColor = UIColor.gray.cgColor
-        //cell.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        //cell.layer.shadowRadius = 2.0
-        //cell.layer.shadowOpacity = 1.0
-        //cell.layer.masksToBounds = false
-        //cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
-        
         return cell
     }
     

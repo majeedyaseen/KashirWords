@@ -24,6 +24,19 @@ struct VegetableConsts {
     public static let turnip   = "turnip"
 }
 
+struct VegetableConstsKashmiri {
+    public static let brinjal  = "vaangan"
+    public static let capsicum = "shimla marchivangun"
+    public static let carrot   = "gaazri"
+    public static let cucumber = "laier"
+    public static let onion    = "gandi"
+    public static let peas     = "mattar"
+    public static let potato   = "aaelvi"
+    public static let spinach  = "paalak"
+    public static let tomato   = "ruvaangan"
+    public static let turnip   = "goagji"
+}
+
 
 struct RelationsConsts {
     public static let brother       = "brother"
@@ -34,12 +47,29 @@ struct RelationsConsts {
     public static let sister        = "sister"
 }
 
+struct RelationsConstsKashmiri {
+    public static let brother       = "boi"
+    public static let father        = "moul"
+    public static let grandfather   = "bidibab"
+    public static let grandmother   = "nain"
+    public static let mother        = "moaj"
+    public static let sister        = "beni"
+}
+
 struct ColorConsts {
     public static let black       = "black"
     public static let blonde      = "blonde"
     public static let green       = "green"
     public static let red         = "red"
     public static let white       = "white"
+}
+
+struct ColorConstsKashmiri {
+    public static let black       = "kruhun"
+    public static let blonde      = "kaachur"
+    public static let green       = "sabz"
+    public static let red         = "vozul"
+    public static let white       = "safaied"
 }
 
 struct NumberConsts {
@@ -65,6 +95,29 @@ struct NumberConsts {
     public static let twenty         = "twenty"
 }
 
+struct NumberConstsKashmiri {
+    public static let one            = "akh"
+    public static let two            = "zi"
+    public static let three          = "trei"
+    public static let four           = "chour"
+    public static let five           = "paanch"
+    public static let six            = "shei"
+    public static let seven          = "sath"
+    public static let eigth          = "aeeth"
+    public static let nine           = "nav"
+    public static let ten            = "dah"
+    public static let eleven         = "kah"
+    public static let twelve         = "bah"
+    public static let thirteen       = "truva"
+    public static let fourteen       = "choddah"
+    public static let fifteen        = "pandah"
+    public static let sixteen        = "shurah"
+    public static let seventeen      = "sadah"
+    public static let eighteen       = "ardah"
+    public static let nineteen       = "kunwuh"
+    public static let twenty         = "wuh"
+}
+
 struct FruitsConsts {
     public static let apple             = "apple"
     public static let banana            = "banana"
@@ -78,6 +131,19 @@ struct FruitsConsts {
     public static let watermelon        = "watermelon"
 }
 
+struct FruitsConstsKashmiri {
+    public static let apple             = "Chount"
+    public static let banana            = "Keal"
+    public static let grapes            = "Dachh"
+    public static let mango             = "Ambb"
+    public static let melon             = "Kharbuz"
+    public static let orange            = "Sangtar"
+    public static let pear              = "Tang"
+    public static let plum              = "Aeer"
+    public static let pomegranade       = "Daen"
+    public static let watermelon        = "HendWend"
+}
+
 struct AnimalsConsts {
     public static let bear       = "bear"
     public static let cat        = "cat"
@@ -89,6 +155,18 @@ struct AnimalsConsts {
     public static let rat        = "rat"
     public static let tiger      = "tiger"
     public static let wolf       = "wolf"
+}
+struct AnimalsConstsKashmiri {
+    public static let bear       = "haput"
+    public static let cat        = "Beair"
+    public static let cow        = "Gaw"
+    public static let dog        = "Hoon"
+    public static let horse      = "Gur"
+    public static let monkey     = "Ponz"
+    public static let rabbit     = "Khargosh"
+    public static let rat        = "Gagur"
+    public static let tiger      = "Sehh"
+    public static let wolf       = "shaal"
 }
 
 func getSoundPath(_ category: Category , _ sound: String) -> String{

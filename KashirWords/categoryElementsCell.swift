@@ -11,9 +11,10 @@ import UIKit
 class categoryElementsCell: UITableViewCell {
     //@IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var englishName: UILabel!
-    
+    @IBOutlet weak var kashmiriName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        kashmiriName.adjustsFontSizeToFitWidth = true
         // Initialization code
     }
 

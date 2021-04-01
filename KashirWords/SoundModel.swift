@@ -11,6 +11,7 @@ import Foundation
 
 struct SoundModel: Equatable{
     var title: String?
+    var Kashmiriname: String?
     var audioFileLocation: String?
     var imageName: String?
 }
