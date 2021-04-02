@@ -22,6 +22,7 @@ class CategoryListItem: UIViewController{
     @IBOutlet weak var email: UIImageView!
     @IBOutlet weak var linkedIn: UIImageView!
     @IBOutlet weak var twitter: UIImageView!
+    @IBOutlet weak var profileText: UILabel!
     
     var player: AVAudioPlayer?
     var headerImageToSet: UIImage?
@@ -30,6 +31,11 @@ class CategoryListItem: UIViewController{
     override func viewDidLoad() {
         if showContactScreen {
             categoryListTableView.isHidden = showContactScreen
+//            profileText.adjustsFontSizeToFitWidth = true
+//            profileText.adjustsFontForContentSizeCategory = true
+            profileText.lineBreakMode = NSLineBreakMode.byWordWrapping
+            profileText.numberOfLines = 0
+            
             prepareContactUs()
         }
         categoryListTableView.delegate = self

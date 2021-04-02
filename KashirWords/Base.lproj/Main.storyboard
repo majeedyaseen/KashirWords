@@ -39,8 +39,8 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-cP-5qa">
-                                <rect key="frame" x="349" y="151" width="45" height="46.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-cP-5qa">
+                                <rect key="frame" x="349" y="152" width="45" height="45.5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="qdL-UO-cTN"/>
@@ -138,9 +138,10 @@
                                 <rect key="frame" x="0.0" y="205" width="414" height="691"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="YsK-RV-YI3">
-                                        <rect key="frame" x="107" y="55.5" width="200" height="200"/>
+                                        <rect key="frame" x="132" y="10" width="150" height="150"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="YsK-RV-YI3" secondAttribute="height" multiplier="1:1" id="wH8-7e-iSe"/>
+                                            <constraint firstAttribute="width" constant="150" id="M3v-hG-jf4"/>
+                                            <constraint firstAttribute="height" constant="150" id="g69-91-Rrd"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-email" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-tV-BdX">
@@ -155,22 +156,22 @@
                                             <constraint firstAttribute="width" secondItem="p5o-az-dIx" secondAttribute="height" multiplier="1:1" id="Uhd-Gj-fFE"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-6o-vky">
+                                        <rect key="frame" x="8" y="180" width="398" height="365"/>
+                                        <string key="text">My Name is Yaseen, iOS Developer from Kashmir. 
+I made this app just for fun. The idea was to give 
+back something to our Kashmiri community.
+ Feel free to connect up. </string>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="Nwx-xT-gIA">
-                                        <rect key="frame" x="255" y="550" width="50" height="50"/>
+                                        <rect key="frame" x="258" y="550" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Nwx-xT-gIA" secondAttribute="height" multiplier="1:1" id="SvN-hz-QVp"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-6o-vky">
-                                        <rect key="frame" x="8" y="287" width="398" height="201"/>
-                                        <string key="text">My Name is Yaseen, iOS Developer from Kashmir. 
-I made this app just for fun. The idea was to give 
-back something to out Kashmiri community.
- Feel free to connect up and take the idea to the next level. </string>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="19"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.49019610879999997" green="0.0" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -179,16 +180,15 @@ back something to out Kashmiri community.
                                     <constraint firstItem="Nwx-xT-gIA" firstAttribute="width" secondItem="a8E-YF-ltQ" secondAttribute="width" multiplier="0.120773" id="4kp-Ge-WNE"/>
                                     <constraint firstItem="z9f-tV-BdX" firstAttribute="width" secondItem="a8E-YF-ltQ" secondAttribute="width" multiplier="0.120773" id="GvP-Jf-ibb"/>
                                     <constraint firstItem="YsK-RV-YI3" firstAttribute="centerX" secondItem="a8E-YF-ltQ" secondAttribute="centerX" id="JHj-8D-wB2"/>
-                                    <constraint firstItem="AYH-6o-vky" firstAttribute="height" secondItem="a8E-YF-ltQ" secondAttribute="height" multiplier="0.290883" id="M6o-UW-GU9"/>
                                     <constraint firstItem="AYH-6o-vky" firstAttribute="leading" secondItem="a8E-YF-ltQ" secondAttribute="leading" constant="8" id="NFJ-iN-QWb"/>
+                                    <constraint firstAttribute="bottom" secondItem="p5o-az-dIx" secondAttribute="bottom" constant="91" id="ZxQ-Rf-PSZ"/>
                                     <constraint firstItem="p5o-az-dIx" firstAttribute="width" secondItem="a8E-YF-ltQ" secondAttribute="width" multiplier="0.120773" id="Zzo-uT-Nyo"/>
                                     <constraint firstItem="p5o-az-dIx" firstAttribute="leading" secondItem="z9f-tV-BdX" secondAttribute="trailing" constant="25" id="et4-zp-3Jw"/>
-                                    <constraint firstItem="p5o-az-dIx" firstAttribute="top" secondItem="AYH-6o-vky" secondAttribute="bottom" constant="62" id="hAf-sn-L6r"/>
-                                    <constraint firstItem="AYH-6o-vky" firstAttribute="top" secondItem="YsK-RV-YI3" secondAttribute="bottom" constant="31.5" id="jrY-Jj-C2o"/>
-                                    <constraint firstItem="Nwx-xT-gIA" firstAttribute="leading" secondItem="p5o-az-dIx" secondAttribute="trailing" constant="23" id="oMQ-D8-qa0"/>
-                                    <constraint firstItem="Nwx-xT-gIA" firstAttribute="top" secondItem="AYH-6o-vky" secondAttribute="bottom" constant="62" id="pjj-nd-Y5u"/>
-                                    <constraint firstItem="z9f-tV-BdX" firstAttribute="top" secondItem="AYH-6o-vky" secondAttribute="bottom" constant="62" id="vA5-W4-BHj"/>
-                                    <constraint firstItem="YsK-RV-YI3" firstAttribute="height" secondItem="a8E-YF-ltQ" secondAttribute="height" multiplier="0.289436" id="y6T-9c-h8z"/>
+                                    <constraint firstItem="AYH-6o-vky" firstAttribute="top" secondItem="YsK-RV-YI3" secondAttribute="bottom" constant="20" id="jrY-Jj-C2o"/>
+                                    <constraint firstAttribute="bottom" secondItem="z9f-tV-BdX" secondAttribute="bottom" constant="91" id="kJb-ks-9Q4"/>
+                                    <constraint firstItem="Nwx-xT-gIA" firstAttribute="leading" secondItem="p5o-az-dIx" secondAttribute="trailing" constant="26" id="oMQ-D8-qa0"/>
+                                    <constraint firstItem="p5o-az-dIx" firstAttribute="top" secondItem="AYH-6o-vky" secondAttribute="bottom" constant="5" id="w8j-QM-lgB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nwx-xT-gIA" secondAttribute="bottom" constant="91" id="wFW-E3-pKo"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kXs-Rp-0yX">
@@ -207,7 +207,7 @@ back something to out Kashmiri community.
                             <constraint firstAttribute="bottom" secondItem="a8E-YF-ltQ" secondAttribute="bottom" id="8oW-9h-6zb"/>
                             <constraint firstItem="KK9-Sa-urE" firstAttribute="leading" secondItem="Ug0-pm-MX4" secondAttribute="leading" id="D0Z-00-gKe"/>
                             <constraint firstItem="Ug0-pm-MX4" firstAttribute="top" secondItem="KK9-Sa-urE" secondAttribute="top" constant="46" id="DGy-9L-ZAY"/>
-                            <constraint firstItem="YsK-RV-YI3" firstAttribute="top" secondItem="KK9-Sa-urE" secondAttribute="bottom" constant="55.5" id="WbU-Be-17V"/>
+                            <constraint firstItem="YsK-RV-YI3" firstAttribute="top" secondItem="KK9-Sa-urE" secondAttribute="bottom" constant="10" id="WbU-Be-17V"/>
                             <constraint firstItem="kXs-Rp-0yX" firstAttribute="leading" secondItem="Ug0-pm-MX4" secondAttribute="leading" id="ZPF-ux-ilv"/>
                             <constraint firstItem="kXs-Rp-0yX" firstAttribute="top" secondItem="KK9-Sa-urE" secondAttribute="bottom" id="fT7-Zd-sw8"/>
                             <constraint firstItem="Ug0-pm-MX4" firstAttribute="trailing" secondItem="kXs-Rp-0yX" secondAttribute="trailing" id="fUL-Sc-JT8"/>
@@ -216,6 +216,11 @@ back something to out Kashmiri community.
                             <constraint firstItem="Ug0-pm-MX4" firstAttribute="trailing" secondItem="a8E-YF-ltQ" secondAttribute="trailing" id="sHD-3X-3kq"/>
                             <constraint firstItem="Ug0-pm-MX4" firstAttribute="trailing" secondItem="KK9-Sa-urE" secondAttribute="trailing" id="yFk-HH-uCa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kXs-Rp-0yX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -225,6 +230,7 @@ back something to out Kashmiri community.
                         <outlet property="headerImage" destination="KK9-Sa-urE" id="kIG-FD-yHM"/>
                         <outlet property="linkedIn" destination="p5o-az-dIx" id="Cod-CL-Akx"/>
                         <outlet property="profileImage" destination="YsK-RV-YI3" id="oeZ-Mp-S1v"/>
+                        <outlet property="profileText" destination="AYH-6o-vky" id="RrG-mI-yhn"/>
                         <outlet property="twitter" destination="Nwx-xT-gIA" id="S0n-vA-VTa"/>
                     </connections>
                 </viewController>
@@ -301,7 +307,7 @@ back something to out Kashmiri community.
         </scene>
     </scenes>
     <resources>
-        <image name="crown.fill" catalog="system" width="128" height="92"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="header-vegetables" width="752" height="293"/>
         <image name="headerHome" width="752" height="435"/>
         <image name="ico-email" width="170" height="170"/>
