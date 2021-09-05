@@ -81,8 +81,6 @@ extension MainViewController: UICollectionViewDelegate{
         nextViewController.data = dataModels[indexPath.row]
         nextViewController.headerImageToSet = getCategoryImage(for: categories[indexPath.row])
         self.present(nextViewController, animated: true, completion: nil)
-        //self.navigationController?.pushViewController(nextViewController, animated:true)
-        print("clicked \(indexPath.row)")
     }
 }
 

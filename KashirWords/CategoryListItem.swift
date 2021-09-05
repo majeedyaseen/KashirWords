@@ -144,6 +144,7 @@ extension CategoryListItem: UITableViewDelegate, UITableViewDataSource{
         if let data = data{
             playSound(for: data[indexPath.row].audioFileLocation ?? "")
         }
+        tableView.deselectRow(at: indexPath, animated: true)
         //play some default sound
     }
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,8 +39,8 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-cP-5qa">
-                                <rect key="frame" x="349" y="152" width="45" height="45.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-profile" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-cP-5qa">
+                                <rect key="frame" x="349" y="151" width="45" height="48"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="qdL-UO-cTN"/>
@@ -137,7 +137,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8E-YF-ltQ">
                                 <rect key="frame" x="0.0" y="205" width="414" height="691"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="YsK-RV-YI3">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="YsK-RV-YI3">
                                         <rect key="frame" x="132" y="10" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="M3v-hG-jf4"/>
@@ -158,10 +158,8 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-6o-vky">
                                         <rect key="frame" x="8" y="180" width="398" height="365"/>
-                                        <string key="text">My Name is Yaseen, iOS Developer from Kashmir. 
-I made this app just for fun. The idea was to give 
-back something to our Kashmiri community.
- Feel free to connect up. </string>
+                                        <string key="text">My Name is Yaseen, I am an iOS Developer from Kashmir. 
+I made this app just for fun.  Feel free to connect up for any suggestion.</string>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -216,11 +214,6 @@ back something to our Kashmiri community.
                             <constraint firstItem="Ug0-pm-MX4" firstAttribute="trailing" secondItem="a8E-YF-ltQ" secondAttribute="trailing" id="sHD-3X-3kq"/>
                             <constraint firstItem="Ug0-pm-MX4" firstAttribute="trailing" secondItem="KK9-Sa-urE" secondAttribute="trailing" id="yFk-HH-uCa"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="kXs-Rp-0yX"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -307,14 +300,14 @@ back something to our Kashmiri community.
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="header-vegetables" width="752" height="293"/>
         <image name="headerHome" width="752" height="435"/>
         <image name="ico-email" width="170" height="170"/>
         <image name="ico-linkedin" width="170" height="170"/>
         <image name="ico-twitter" width="170" height="170"/>
+        <image name="icon-profile" width="350" height="350"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="photo" width="640" height="640"/>
+        <image name="photo" width="958" height="1280"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <image name="tab-left" width="419" height="88"/>
         <image name="tab-right" width="419" height="88"/>

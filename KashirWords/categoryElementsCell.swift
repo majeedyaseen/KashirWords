@@ -10,8 +10,16 @@ import UIKit
 
 class categoryElementsCell: UITableViewCell {
     //@IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var englishName: UILabel!
-    @IBOutlet weak var kashmiriName: UILabel!
+    @IBOutlet weak var englishName: UILabel! {
+        didSet {
+            englishName.textColor = UIColor.white
+        }
+    }
+    @IBOutlet weak var kashmiriName: UILabel! {
+        didSet {
+            kashmiriName.textColor = UIColor.white
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         kashmiriName.adjustsFontSizeToFitWidth = true
